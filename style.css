@@ -1,0 +1,8 @@
+
+span.tb-status-presence div.tooltip {
+  display: none !important;
+}
+
+span.tb-status-presence li.presence-user {
+  display: none !important;
+}

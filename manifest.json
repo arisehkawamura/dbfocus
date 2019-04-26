@@ -1,20 +1,18 @@
 {
-  "name": "Colavim",
+  "name": "dbfocus",
   "version": "0.1",
   "manifest_version": 2,
-  "description": "Enable Vim in Google Colab",
+  "description": "Focus",
   "icons": {
     "48": "logo.png"
   },
   "content_scripts": [
     {
       "matches": [
-        "https://colab.research.google.com/*"
+        "https://*.databricks.com/*"
       ],
-      "js": ["js/contentscript.js"],
-      "css": ["css/style.css"],
+      "css": ["style.css"],
       "run_at": "document_idle"
     }
-  ],
-  "web_accessible_resources": ["js/main.js"]
+  ]
 }
